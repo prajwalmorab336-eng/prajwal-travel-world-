@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWay - Explore The World</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Wander<span>Way.</span></a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="hero-tag">DISCOVER THE BEAUTY OF THE WORLD</p>
+
+            <h1>Explore The World<br>
+                With <span>WanderWay</span>
+            </h1>
+
+            <p class="hero-description">
+                Travel beyond boundaries. Discover beautiful places,
+                create unforgettable memories and enjoy every journey.
+            </p>
+
+            <a href="#destinations" class="primary-btn">Explore Destinations →</a>
+        </div>
+
+        <div class="hero-bottom">
+            <span>✈ Your Journey Begins Here</span>
+            <span>🌍 Explore • Experience • Enjoy</span>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-box">
+            <div>
+                <label for="searchInput">Where do you want to go?</label>
+                <input type="text" id="searchInput"
+                    placeholder="Search destination...">
+            </div>
+
+            <button id="searchBtn">Search Now</button>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="section" id="destinations">
+
+        <div class="section-heading">
+            <p class="small-title">EXPLORE PLACES</p>
+            <h2>Popular Destinations</h2>
+            <p>Find your perfect destination for your next adventure.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filters">
+            <button class="filter-btn active" data-category="All">All</button>
+            <button class="filter-btn" data-category="Beach">Beach</button>
+            <button class="filter-btn" data-category="Mountain">Mountain</button>
+            <button class="filter-btn" data-category="City">City</button>
+        </div>
+
+        <div class="destination-grid" id="destinationGrid">
+            <!-- Destination cards are added using JavaScript -->
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No destinations found. Try another search.
+        </p>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features-section" id="about">
+        <div class="section-heading">
+            <p class="small-title">WHY WANDERWAY?</p>
+            <h2>Travel With Confidence</h2>
+            <p>We make your travel experience easy and memorable.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Best Destinations</h3>
+                <p>Discover amazing places around the world with us.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Affordable Prices</h3>
+                <p>Enjoy memorable trips with budget-friendly packages.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎧</div>
+                <h3>Travel Support</h3>
+                <p>Get assistance and support throughout your journey.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3>Best Experience</h3>
+                <p>Make beautiful memories with carefully planned trips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="section packages-section" id="packages">
+        <div class="section-heading">
+            <p class="small-title">SPECIAL OFFERS</p>
+            <h2>Our Travel Packages</h2>
+            <p>Choose a package and start planning your next trip.</p>
+        </div>
+
+        <div class="package-grid">
+
+            <div class="package-card">
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800"
+                    alt="Goa beach">
+
+                <div class="package-info">
+                    <span class="package-label">3 Days / 2 Nights</span>
+                    <h3>Goa Holiday</h3>
+                    <p>Beach activities, sightseeing and relaxation.</p>
+                    <div class="package-bottom">
+                        <strong>₹7,999</strong>
+                        <button class="book-btn" data-package="Goa Holiday">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=800"
+                    alt="Taj Mahal">
+
+                <div class="package-info">
+                    <span class="package-label">4 Days / 3 Nights</span>
+                    <h3>Agra Tour</h3>
+                    <p>Explore historical places and beautiful architecture.</p>
+                    <div class="package-bottom">
+                        <strong>₹9,499</strong>
+                        <button class="book-btn" data-package="Agra Tour">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800"
+                    alt="Mountain trip">
+
+                <div class="package-info">
+                    <span class="package-label">5 Days / 4 Nights</span>
+                    <h3>Mountain Escape</h3>
+                    <p>Enjoy mountain views, nature and peaceful surroundings.</p>
+                    <div class="package-bottom">
+                        <strong>₹12,999</strong>
+                        <button class="book-btn" data-package="Mountain Escape">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section">
+        <div class="section-heading">
+            <p class="small-title">TRAVELLER STORIES</p>
+            <h2>What Our Travellers Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"A wonderful experience! The destinations were beautiful
+                    and the trip was well planned."</p>
+                <h4>Priya Sharma</h4>
+                <span>Travel Enthusiast</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"The booking process was simple and the travel package
+                    was affordable. Highly recommended!"</p>
+                <h4>Rahul Kumar</h4>
+                <span>Adventure Traveller</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Beautiful places and unforgettable memories.
+                    I would love to travel again!"</p>
+                <h4>Ananya Rao</h4>
+                <span>Happy Traveller</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="contact">
+        <div class="booking-container">
+            <div class="booking-text">
+                <p class="small-title">PLAN YOUR NEXT TRIP</p>
+                <h2>Ready For Your Next Adventure?</h2>
+                <p>Fill in your details and send us your travel enquiry.</p>
+            </div>
+
+            <form id="bookingForm">
+                <input type="text" id="customerName"
+                    placeholder="Your Full Name" required>
+
+                <input type="email" id="customerEmail"
+                    placeholder="Your Email Address" required>
+
+                <select id="selectedDestination" required>
+                    <option value="">Select Destination</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Dubai">Dubai</option>
+                </select>
+
+                <input type="date" id="travelDate" required>
+
+                <button type="submit" class="primary-btn">Send Enquiry</button>
+
+                <p id="formMessage" role="status"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer-about">
+                <a href="#" class="logo footer-logo">Wander<span>Way.</span></a>
+                <p>Discover the world, explore new destinations
+                    and create memories that last forever.</p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#packages">Packages</a>
+                <a href="#about">About Us</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+                <p>📧 wanderway@example.com</p>
+                <p>📞 +91 98765 43210</p>
+                <p>📍 Bangalore, India</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 WanderWay. All Rights Reserved.</p>
+            <p>Made with ❤️ for Travel Lovers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
